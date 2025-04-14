@@ -28,6 +28,13 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				railway: {
+					blue: '#1A365D',
+					yellow: '#FFC107',
+					red: '#DC2626',
+					green: '#16A34A',
+					amber: '#F59E0B'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'

@@ -98,4 +98,51 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+  
+  html, body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .train-card-enter {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  
+  .train-card-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .train-card-exit {
+    opacity: 1;
+  }
+  
+  .train-card-exit-active {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .blink {
+    animation: blink 1.5s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
