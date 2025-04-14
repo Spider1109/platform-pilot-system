@@ -1,26 +1,304 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>platform-pilot-system</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-
-    <meta property="og:title" content="platform-pilot-system" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>AgroMarket - Connect Farmers and Consumers</title>
+    <meta name="description" content="Agriculture marketplace connecting farmers directly with consumers" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <img src="https://placehold.co/200x50?text=AgroMarket" alt="AgroMarket Logo" />
+          </div>
+          <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="#" class="nav-link active">Home</a></li>
+              <li><a href="#" class="nav-link">Market</a></li>
+              <li><a href="#" class="nav-link">Farmers</a></li>
+              <li><a href="#" class="nav-link">Seasonal</a></li>
+              <li><a href="#" class="nav-link">About Us</a></li>
+            </ul>
+          </nav>
+          <div class="header-cta">
+            <a href="#" class="btn btn-outline">Login</a>
+            <a href="#" class="btn btn-primary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Fresh Farm Products <br>Direct To Your Table</h1>
+            <p>Connect directly with local farmers and get fresh, organic produce delivered to your doorstep. Support local agriculture and eat healthier.</p>
+            <div class="hero-cta">
+              <a href="#" class="btn btn-primary btn-large">Shop Now</a>
+              <a href="#" class="btn btn-secondary btn-large">Sell Your Produce</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://placehold.co/600x400?text=Fresh+Produce" alt="Fresh farm produce" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <div class="category-icon">🥕</div>
+            <h3>Vegetables</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon">🍎</div>
+            <h3>Fruits</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon">🌾</div>
+            <h3>Grains</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon">🥛</div>
+            <h3>Dairy</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon">🍯</div>
+            <h3>Honey</h3>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon">🥚</div>
+            <h3>Eggs</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-badge">Organic</div>
+            <div class="product-image">
+              <img src="https://placehold.co/300x200?text=Organic+Tomatoes" alt="Organic Tomatoes" />
+            </div>
+            <div class="product-info">
+              <h3>Organic Tomatoes</h3>
+              <div class="product-meta">
+                <span class="product-seller">by Green Farms</span>
+                <span class="product-location">Locally Grown</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$3.99/kg</span>
+                <button class="btn btn-icon">🛒</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://placehold.co/300x200?text=Fresh+Apples" alt="Fresh Apples" />
+            </div>
+            <div class="product-info">
+              <h3>Fresh Apples</h3>
+              <div class="product-meta">
+                <span class="product-seller">by Orchard Hills</span>
+                <span class="product-location">Locally Grown</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$2.49/kg</span>
+                <button class="btn btn-icon">🛒</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">New</div>
+            <div class="product-image">
+              <img src="https://placehold.co/300x200?text=Organic+Honey" alt="Organic Honey" />
+            </div>
+            <div class="product-info">
+              <h3>Organic Honey</h3>
+              <div class="product-meta">
+                <span class="product-seller">by Bee Haven</span>
+                <span class="product-location">Mountain Region</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$8.99/bottle</span>
+                <button class="btn btn-icon">🛒</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="https://placehold.co/300x200?text=Farm+Fresh+Eggs" alt="Farm Fresh Eggs" />
+            </div>
+            <div class="product-info">
+              <h3>Farm Fresh Eggs</h3>
+              <div class="product-meta">
+                <span class="product-seller">by Happy Hens</span>
+                <span class="product-location">Free Range</span>
+              </div>
+              <div class="product-price-row">
+                <span class="product-price">$4.50/dozen</span>
+                <button class="btn btn-icon">🛒</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Farmers -->
+    <section class="farmers">
+      <div class="container">
+        <h2 class="section-title">Meet Our Farmers</h2>
+        <div class="farmers-grid">
+          <div class="farmer-card">
+            <div class="farmer-image">
+              <img src="https://placehold.co/150x150?text=Farmer" alt="Farmer John" />
+            </div>
+            <h3>Farmer John</h3>
+            <p>Specializes in organic vegetables grown using traditional methods.</p>
+            <a href="#" class="btn btn-text">View Products</a>
+          </div>
+          
+          <div class="farmer-card">
+            <div class="farmer-image">
+              <img src="https://placehold.co/150x150?text=Farmer" alt="Sarah's Orchard" />
+            </div>
+            <h3>Sarah's Orchard</h3>
+            <p>Family-owned apple and pear orchard running for three generations.</p>
+            <a href="#" class="btn btn-text">View Products</a>
+          </div>
+          
+          <div class="farmer-card">
+            <div class="farmer-image">
+              <img src="https://placehold.co/150x150?text=Farmer" alt="Green Valley Farms" />
+            </div>
+            <h3>Green Valley Farms</h3>
+            <p>Cooperative of small-scale farmers offering diverse seasonal produce.</p>
+            <a href="#" class="btn btn-text">View Products</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title center">How AgroMarket Works</h2>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-icon">🔍</div>
+            <h3>Find Local Products</h3>
+            <p>Browse products from farmers in your area and discover seasonal offerings.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">🛒</div>
+            <h3>Order Directly</h3>
+            <p>Place orders directly with farmers and arrange pickup or delivery options.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">🤝</div>
+            <h3>Support Local</h3>
+            <p>Receive fresh products while supporting local agriculture and sustainable farming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to start buying or selling?</h2>
+          <p>Join our growing community of farmers and conscious consumers today.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary btn-large">Join as Consumer</a>
+            <a href="#" class="btn btn-secondary btn-large">Join as Farmer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="https://placehold.co/200x50?text=AgroMarket" alt="AgroMarket Logo" />
+            </div>
+            <p>Connecting farmers and consumers for a sustainable food system.</p>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Market</a></li>
+              <li><a href="#">Farmers</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Categories</h3>
+            <ul class="footer-links">
+              <li><a href="#">Vegetables</a></li>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Dairy</a></li>
+              <li><a href="#">Honey</a></li>
+              <li><a href="#">Grains</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to our newsletter for updates on seasonal products and farmer stories.</p>
+            <form class="footer-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 AgroMarket. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
